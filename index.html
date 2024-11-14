@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Recipe Website</title>
+</head>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link href="my_food.css" rel="stylesheet">
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Food.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Popular</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Seasonal</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 animate__animated animate__fadeInLeft">
+                    <h1 class="display-4 fw-bold">42 Quick & Easy Fall Dinners</h1>
+                    <p class="lead">Discover delicious recipes for the season</p>
+                    <button class="btn btn-primary">View Recipes</button>
+                </div>
+                <div class="col-md-6 animate__animated animate__fadeInRight">
+                    <img src="https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZCUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Fall Dinner" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="mb-4">Explore More</h2>
+            <div class="row g-4">
+                <div class="col-md-2 col-6 text-center animate__animated animate__fadeIn">
+                    <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2023/11/21/FNK_Intsant-Pot-Texas-Style-Chili-Mac_H1.jpg.rend.hgtvcom.1280.960.suffix/1700604212111.jpeg"
+                        alt="Category" class="category-icon mb-2">
+                    <p>Comfort Food</p>
+                </div>
+                <div class="col-md-2 col-6 text-center animate__animated animate__fadeIn">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aGVhbHRoeSUyMGZvb2R8ZW58MHx8MHx8fDA%3D"
+                        alt="Category" class="category-icon mb-2">
+                    <p>Healthy Meals</p>
+                </div>
+                <div class="col-md-2 col-6 text-center animate__animated animate__fadeIn">
+                    <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Beef-with-Ramen-Noodles_EXPS_FT21_22747_F_1116_1.jpg"
+                        alt="Category" class="category-icon mb-2">
+                    <p>Quick & Easy</p>
+                </div>
+                <div class="col-md-2 col-6 text-center animate__animated animate__fadeIn">
+                    <img src="https://b.zmtcdn.com/data/collections/43b737e798bd1e84733ef1b23fec7002_1676553218.jpg"
+                        alt="Category" class="category-icon mb-2">
+                    <p>Desserts</p>
+                </div>
+                <div class="col-md-2 col-6 text-center animate__animated animate__fadeIn">
+                    <img src="https://img.washingtonpost.com/rf/image_908w/2010-2019/WashingtonPost/2015/03/03/Foreign/Images/iStock_000018231648_Large1425426370.jpg"
+                        alt="Category" class="category-icon mb-2">
+                    <p>Vegetarian</p>
+                </div>
+                <div class="col-md-2 col-6 text-center animate__animated animate__fadeIn">
+                    <img src="https://www.azada.co.uk/wp-content/uploads/2020/09/dreamstime_s_156301140.jpg"
+                        alt="Category" class="category-icon mb-2">
+                    <p>Seasonal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Now -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2>Trending Now</h2>
+                <a href="#" class="text-decoration-none">View all</a>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="card recipe-card animate__animated animate__fadeIn">
+                        <img src="https://www.sprinklesandsprouts.com/wp-content/uploads/2019/02/CreamCreamy-Spicy-Chicken-Pasta-SQ.jpg"
+                            class="card-img-top" alt="Recipe">
+                        <div class="card-body">
+                            <h5 class="card-title">Spicy Chicken Pasta</h5>
+                            <p class="card-text"><small class="text-muted">30 mins | Easy</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card recipe-card animate__animated animate__fadeIn">
+                        <img src="https://i.ytimg.com/vi/pXO1l9tZmic/maxresdefault.jpg" class="card-img-top"
+                            alt="Recipe">
+                        <div class="card-body">
+                            <h5 class="card-title">Pumpkin Soup</h5>
+                            <p class="card-text"><small class="text-muted">45 mins | Medium</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card recipe-card animate__animated animate__fadeIn">
+                        <img src="https://www.inspiredtaste.net/wp-content/uploads/2019/11/Homemade-Apple-Pie-From-Scratch-1200.jpg"
+                            class="card-img-top" alt="Recipe">
+                        <div class="card-body">
+                            <h5 class="card-title">Apple Pie</h5>
+                            <p class="card-text"><small class="text-muted">60 mins | Advanced</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card recipe-card animate__animated animate__fadeIn">
+                        <img src="https://www.foodandwine.com/thmb/vVUv6lRmIZg9HgxnmemlK8ouD3I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Roasted-Butternut-Squash-with-chorizo-spiced-kale-FT-RECIPE0920-abdbe96ef511468d96b0cccca512ccaa.jpg"
+                            class="card-img-top" alt="Recipe">
+                        <div class="card-body">
+                            <h5 class="card-title">Butternut Squash</h5>
+                            <p class="card-text"><small class="text-muted">40 mins | Easy</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- what we're craving -->
+    <section class="py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2>What We're Craving</h2>
+                <a href="#" class="text-decoration-none">View all</a>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="food-item animate__animated animate__fadeIn">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIbR01ik2kC0eTl2ZRF7YCN5DVsQtNAzUhVg&s"
+                            alt="Pumpkin Recipes">
+                        <div class="food-overlay">
+                            <h4>45 Sweet & Savory Pumpkin Recipes</h4>
+                            <p>Fall's favorite ingredient in soups, pies, and more!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="food-item animate__animated animate__fadeIn">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_uSAIYwSo-eOBZQrGRKQyN1Lg27bI4JFDNw&s"
+                            alt="Eggplant Recipes">
+                        <div class="food-overlay">
+                            <h4>32 Creative Eggplant Recipes</h4>
+                            <p>From classic parmesan to modern takes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="food-item animate__animated animate__fadeIn">
+                        <img src="https://bcbstwelltuned.com/wp-content/uploads/2020/08/GettyImages-1207271995-scaled-e1596543976889.jpg"
+                            alt="Squash Recipes">
+                        <div class="food-overlay">
+                            <h4>Seasonal Eats: Squash, 15 Ways</h4>
+                            <p>Make the most of fall's versatile veggie</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Don't Miss Section with Carousel -->
+    <section class="py-5 bg-light d-none d-md-block">
+        <div class="container">
+            <h2 class="mb-4">Don't Miss</h2>
+            <div id="dontMissCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="dont-miss-card">
+                                    <img src="https://www.feastingathome.com/wp-content/uploads/2024/01/crispy-sesame-tempeh-13-800x1200.jpg"
+                                        alt="Recipe 1">
+                                    <div class="dont-miss-overlay">
+                                        <h4>15 CSA Ingredients to Cook Up This Fall</h4>
+                                        <p>Make the most of your farm share</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="dont-miss-card">
+                                    <img src="https://www.eatingwell.com/thmb/D3XVv164hnQtF-x1E50hYQWSO5s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/red-lentil-soup-with-saffron-2000-b99d46d7abec4801af18410c41da4c68.jpg"
+                                        alt="Recipe 2">
+                                    <div class="dont-miss-overlay">
+                                        <h4>73 Easy Tailgating Recipes</h4>
+                                        <p>Game day favorites for a crowd</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="dont-miss-card">
+                                    <img src="https://img.freepik.com/premium-photo/pizza-with-different-toppings-slice-pie-table_874813-2034.jpg"
+                                        alt="Recipe 3">
+                                    <div class="dont-miss-overlay">
+                                        <h4>Nachos, 20 Ways</h4>
+                                        <p>From classic to creative toppings</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="dont-miss-card">
+                                    <img src="https://www.feastingathome.com/wp-content/uploads/2020/11/Instant-pot-beef-stew-17.jpg"
+                                        alt="Recipe 4">
+                                    <div class="dont-miss-overlay">
+                                        <h4>Instant Pot Favorites</h4>
+                                        <p>Quick and easy pressure cooker meals</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="dont-miss-card">
+                                    <img src="https://media.self.com/photos/60634a7b6fb177c75e545c84/4:3/w_1347,h_1010,c_limit/Vegetarian-Mapo-Tofu.jpg"
+                                        alt="Recipe 5">
+                                    <div class="dont-miss-overlay">
+                                        <h4>Vegetarian Comfort Food</h4>
+                                        <p>Hearty meatless meals</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="dont-miss-card">
+                                    <img src="https://www.refrigeratedfrozenfood.com/ext/resources/NEW_RD_Website/DefaultImages/default-pasta.jpg?1430942591"
+                                        alt="Recipe 6">
+                                    <div class="dont-miss-overlay">
+                                        <h4>One-Pot Wonders</h4>
+                                        <p>Less cleanup, more flavor</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#dontMissCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#dontMissCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fan Favorites -->
+    <section class="py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2>Fan Favorites</h2>
+                <a href="#" class="text-decoration-none">View all</a>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="food-item animate__animated animate__fadeIn">
+                        <img src="https://www.allrecipes.com/thmb/XkapTqFUR4U_fMMZQwgikkuoL-Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/RM-281995-ClassicHeartyBeefStew-ddmfs-3x4-6957-660344f4e4c8417fa6d1cf3175e0202c.jpg"
+                            alt="Fan Favorite 1">
+                        <div class="food-overlay">
+                            <h5>Classic Beef Stew</h5>
+                            <p>⭐ 4.9 (2.5k reviews)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="food-item animate__animated animate__fadeIn">
+                        <img src="https://assets.bonappetit.com/photos/5cd32ef32c3537178c3c8f03/1:1/w_2560%2Cc_limit/BA-Perfect-Pizza.jpg"
+                            alt="Fan Favorite 2">
+                        <div class="food-overlay">
+                            <h5>Perfect Pizza Dough</h5>
+                            <p>⭐ 4.8 (3.1k reviews)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="food-item animate__animated animate__fadeIn">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyVimUewuQWZKsOkgxEmA92fKj06rk3vWqdg&s"
+                            alt="Fan Favorite 3">
+                        <div class="food-overlay">
+                            <h5>Chocolate Chip Cookies</h5>
+                            <p>⭐ 4.9 (4.2k reviews)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="food-item animate__animated animate__fadeIn">
+                        <img src="https://www.allrecipes.com/thmb/e8uotDI18ieXNBY0KpmtGKbxMRM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/238691-Simple-Macaroni-And-Cheese-mfs_008-4x3-6ed91ba87a1344558aacc0f9ef0f4b41.jpg"
+                            alt="Fan Favorite 4">
+                        <div class="food-overlay">
+                            <h5>Creamy Mac & Cheese</h5>
+                            <p>⭐ 4.7 (1.8k reviews)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Best of the Day -->
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-3">BEST OF THE DAY</h2>
+            <p class="mb-5">Each friendly, nutritious and well-picked recipe brings cooking such a delicious way to
+                maintain your and your family's healthy diet.</p>
+            <div class="row g-4">
+                <div class="col-md-6 animate__animated animate__fadeInLeft">
+                    <div class="card h-100">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://www.shutterstock.com/image-photo/healthy-eating-background-studio-photography-260nw-346373249.jpg"
+                                    alt="New Products" class="img-fluid rounded-start h-100 object-fit-cover">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-start">
+                                    <h4>New Products</h4>
+                                    <p>Browse our range for certified organic and gluten-free products. Get healthy each
+                                        day.</p>
+                                    <button class="btn btn-primary">VIEW ALL PRODUCTS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 animate__animated animate__fadeInRight">
+                    <div class="card h-100">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://img.freepik.com/free-vector/poster-vitamin-food-products_1284-17148.jpg?semt=ais_hybrid"
+                                    alt="Cleaning Products" class="img-fluid rounded-start h-100 object-fit-cover">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body text-start">
+                                    <h4>Healthy Products</h4>
+                                    <p>Our store offers a wide range of healthy products for us.</p>
+                                    <button class="btn btn-primary">VIEW ALL PRODUCTS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-2">JOIN TO ORGANIC STORE FARM</p>
+            <button class="btn btn-primary rounded-circle mb-3" style="background: black; border: 1px solid white;">
+                <i class="fas fa-envelope"></i>
+            </button>
+            <p class="small mb-0">© All Rights Reserved. Terms of Use and Privacy Policy</p>
+        </div>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script src="my_food.js"></script>
+</html>
