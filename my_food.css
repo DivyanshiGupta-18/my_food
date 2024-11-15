@@ -103,3 +103,58 @@
     margin-left: 1.5rem;
   }
   
+
+
+  /* hero-section */
+  .hero {
+    height: 65vh;
+    background: url('https://i0.wp.com/blog.petpooja.com/wp-content/uploads/2021/10/indian.jpg?resize=696%2C385&ssl=1') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-item {
+    padding: 20px;
+}
+
+.g-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border-radius: 0 50px 0 50px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.s-btn {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid white;
+    transition: all 0.3s ease;
+}
+
+.s-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.c-dots {
+    bottom: -60px;
+}
+
+.c-dots [data-bs-target] {
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 8px;
+    border: none;
+    padding: 0;
+    opacity: 1;
+}
+
+.c-dots .active {
+    background-color: white;
+    opacity: 1;
+}
